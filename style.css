@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* 
+font-family: 'Comfortaa';
+font-family: 'Nunito';
+font-family: 'Open Sans Condensed';
+
+rgb(214, 160, 91)
+ */
+
+body {
+    font-family: 'Comfortaa';
+}
+
+.container {
+    background-image: url(/img/bg.png);
+    background-repeat: repeat;
+}
+
+/* HOME */
+
+#home {
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.logo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: white;
+}
+
+.logo h1 {
+    font-size: 3.2rem;
+    text-align: center;
+    color: rgb(214, 160, 91);
+    margin-bottom: 10px;
+}
+
+.logo h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: rgb(214, 160, 91);
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#navigation {
+    text-align: center;
+    background-color: rgb(214, 160, 91);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#navigation li {
+    display: inline;
+}
+
+#navigation a {
+    border-left: 2px solid rgb(214, 160, 91);
+    border-right: 2px solid rgb(214, 160, 91);
+    font-size: 1.4rem;
+    padding: 10px 30px;
+}
+
+#navigation a:hover {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+#navigation a:link {
+    text-decoration: none;
+    color: white;
+}
+
+#navigation a:visited {
+    color: white;
+}
+
+/* HOME BANNER */
+
+.banner {
+    background-image: url(/img/bannerImg.jpg);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+.banner .overlay {
+    width: 40%;
+    height: 50%;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+#bannerTxt {
+    font-size: 1.5rem;
+}
+
+#bannerTxt, #bannerTxtBold {
+    color: white;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+}
+
+#home #bannerTxtBold {
+    color: white;
+    font-size: 3.2rem;
+}
+
+/* HOME NEWSLETTER */
+
+.newsletter {
+    padding: 20px 30px;
+    color: rgb(214, 160, 91);
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 5%;
+}
+
+.newsletter h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.newsletter form * {
+    font-size: 1.5rem;
+}
+
+.newsletter form #email {
+    width: 20%;
+}
+
+.newsletter label {
+    margin-right: 10px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.newsletter input {
+    padding: 5px;
+}
+
+.newsletter button {
+    margin-left: 40px;
+    padding: 5px;
+}
+
+/* REWARDS */
+
+.rewards {
+    background-image: linear-gradient(to bottom right, rgb(214, 160, 91), #F5C688);
+    color: white;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.rewards h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.rewards p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.rewardsInfo :nth-child(3) {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.rewards :nth-child(5) {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.rewardsPoints {
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 5%;
+}
+
+.steps {
+    padding-left: 40px;
+}
+
+/* OFFERS */
+
+.offers {
+    text-align: center;
+    color: white;
+    width: 90%;
+    height: 30%;
+    background-image: url(/img/easterbg.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom:80px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.offers h1 {
+    font-size: 4.2rem;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.offers p {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.offers :nth-child(4) {
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 30px;
+    font-size: 1.5rem;
+}
+
+/* FOOTER */
+
+footer {
+    color: white;
+    background-color: rgb(214, 160, 91);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.4)
+}
+
+footer li {
+    display: inline;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+footer ul {
+    font-size: 1.4rem;
+    padding: 2% 5%;
+    text-align: center;
+}
+
+footer i {
+    padding-right: 10px;
+}
+
+/* ################################################ */
+
+/* CONTACT PAGE */
+
+#altnav {
+    text-align: left;
+    background-color: rgb(214, 160, 91);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    padding-left: 100px;
+}
+
+#altnav i {
+    padding-right: 10px;
+}
+
+#altnav li {
+    list-style: none;
+    display: inline;
+}
+
+#altnav a {
+    border-left: 2px solid rgb(214, 160, 91);
+    border-right: 2px solid rgb(214, 160, 91);
+    font-size: 1.4rem;
+    padding: 10px 30px;
+}
+
+#altnav a:hover {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+#altnav a:link {
+    text-decoration: none;
+    color: white;
+}
+
+#altnav a:visited {
+    color: white;
+}
+
+
+.contact {
+    color: white;
+    font-size: 1.3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    padding: 2%;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom right, rgb(214, 160, 91), #F5C688);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contact h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    text-align: center;
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px 0px;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.contact label {
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 20%;
+}
+
+.contact input, .contact textarea {
+    width: 60%;
+    font-size: 1.2rem;
+    padding: 3px;
+    border: none;
+    border-bottom: 2px solid rgb(214, 160, 91);
+}
+
+form input:focus {
+    outline: none;
+    border: 2px solid rgb(214, 160, 91);
+    border-radius: 10px;
+}
+
+form textarea:focus {
+    outline: none;
+    border: 2px solid rgb(214, 160, 91);
+    border-radius: 10px;
+}
+
+.contact textarea {
+    height: 20%;
+    resize: none;
+    border-top: 2px solid rgb(214, 160, 91);
+}
+
+.contact button {
+    display: block;
+    font-size: 1.2rem;
+    padding: 10px;
+    margin-left: 45%;
+    margin-top: 30px;
+    background-color: #22E100 ;
+    border: none;
+    border-radius: 15px;
+    color: white;
+}
+
+.contact button:hover {
+    background-color: #4FFF30 ;
+}
+
+.overflow {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    height: 60px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* MENU */
+
+.coffeeTable, .cakeTable {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    padding: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#coffeeTable {
+    width: 50%;
+    margin-left: 25%;
+    color: rgb(214, 160, 91);
+}
+
+caption {
+    margin-bottom: 20px;
+    font-size: 1.7rem;
+}
+
+th {
+    font-size: 1.4rem;
+}
+
+table, th, td {
+    padding: 5px;
+}
+
+td {
+    border-bottom: 2px solid #dddddd;
+    font-size: 1.2rem;
+    text-align: center;
+}
