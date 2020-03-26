@@ -1,3 +1,9 @@
+:root {
+    --primary: black;
+    --secondary: white;
+    --alt: rgb(214, 160, 91);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -44,7 +50,7 @@ body {
 .logo h1 {
     font-size: 3.2rem;
     text-align: center;
-    color: rgb(214, 160, 91);
+    color: var(--primary);
     margin-bottom: 10px;
 }
 
@@ -52,7 +58,7 @@ body {
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: rgb(214, 160, 91);
+    color: var(--primary);
 }
 
 nav {
@@ -64,7 +70,7 @@ nav {
 
 #navigation {
     text-align: center;
-    background-color: rgb(214, 160, 91);
+    background-color: var(--primary);
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -74,8 +80,8 @@ nav {
 }
 
 #navigation a {
-    border-left: 2px solid rgb(214, 160, 91);
-    border-right: 2px solid rgb(214, 160, 91);
+    border-left: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
     font-size: 1.4rem;
     padding: 10px 30px;
 }
@@ -130,7 +136,7 @@ nav {
 
 .newsletter {
     padding: 20px 30px;
-    color: rgb(214, 160, 91);
+    color: var(--primary);
     margin-left: 5%;
     margin-right: 5%;
     background-color: white;
@@ -170,8 +176,8 @@ nav {
 /* REWARDS */
 
 .rewards {
-    background-image: linear-gradient(to bottom right, rgb(214, 160, 91), #F5C688);
-    color: white;
+    background-color: var(--secondary);
+    color: var(--primary);
     display: inline-flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -189,11 +195,16 @@ nav {
 .rewards h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    color: var(--alt);
 }
 
 .rewards p {
     font-size: 1.3rem;
     margin-bottom: 10px;
+}
+
+.rewards .fa-coffee {
+    color: var(--alt);
 }
 
 .rewardsInfo :nth-child(3) {
@@ -208,8 +219,6 @@ nav {
 }
 
 .rewardsPoints {
-    border: 2px solid white;
-    border-radius: 20px;
     padding: 5%;
 }
 
@@ -258,7 +267,7 @@ nav {
 
 footer {
     color: white;
-    background-color: rgb(214, 160, 91);
+    background-color: var(--primary);
     box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.4)
 }
 
@@ -284,7 +293,7 @@ footer i {
 
 #altnav {
     text-align: left;
-    background-color: rgb(214, 160, 91);
+    background-color: var(--primary);
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
@@ -301,8 +310,8 @@ footer i {
 }
 
 #altnav a {
-    border-left: 2px solid rgb(214, 160, 91);
-    border-right: 2px solid rgb(214, 160, 91);
+    border-left: 2px solid var(--primary);
+    border-right: 2px solid var(--primary);
     font-size: 1.4rem;
     padding: 10px 30px;
 }
@@ -323,14 +332,14 @@ footer i {
 
 
 .contact {
-    color: white;
+    color: var(--primary);
     font-size: 1.3rem;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
     padding: 2%;
     border-radius: 10px;
-    background-image: linear-gradient(to bottom right, rgb(214, 160, 91), #F5C688);
+    background-image: linear-gradient(to bottom right, white, #F1F1F1   );
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -338,6 +347,7 @@ footer i {
     font-size: 3rem;
     text-align: center;
     margin-bottom: 20px;
+    color: var(--alt);
 }
 
 .contact p {
@@ -350,13 +360,14 @@ footer i {
     text-align: center;
     border-radius: 10px;
     background-color: white;
+    border: 2px solid var(--alt);
     padding: 30px 0px;
     width: 50%;
     margin-left: 25%;
 }
 
 .contact label {
-    color: black;
+    color: var(--primary);
     display: block;
     margin-bottom: 10px;
     margin-top: 20px;
@@ -368,26 +379,26 @@ footer i {
     width: 60%;
     font-size: 1.2rem;
     padding: 3px;
+    padding-left: 10px;
     border: none;
-    border-bottom: 2px solid rgb(214, 160, 91);
+    border-bottom: 2px solid var(--alt);
 }
 
 form input:focus {
     outline: none;
-    border: 2px solid rgb(214, 160, 91);
     border-radius: 10px;
+    border: 2px solid var(--alt);
 }
 
 form textarea:focus {
     outline: none;
-    border: 2px solid rgb(214, 160, 91);
     border-radius: 10px;
+    border: 2px solid var(--alt);
 }
 
 .contact textarea {
     height: 20%;
     resize: none;
-    border-top: 2px solid rgb(214, 160, 91);
 }
 
 .contact button {
@@ -418,7 +429,7 @@ form textarea:focus {
 
 /* MENU */
 
-.coffeeTable, .cakeTable {
+.altOptions, #coffee, #cake, #cold, #summer {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5%;
@@ -430,15 +441,63 @@ form textarea:focus {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#coffeeTable {
+#coffeeTable, #cakeTable, #coldTable, #summerTable {
     width: 50%;
     margin-left: 25%;
-    color: rgb(214, 160, 91);
+    color: black;
+}
+
+#coffee, #cake, #cold, #summer {
+    padding-top: 100px;
+}
+
+#alt {
+    margin-bottom: 60px;
+}
+
+.altOptions {
+    padding: 50px;
+    text-align: center;
+}
+
+.altOptions h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.altOptions h2 {
+    margin-bottom: 30px;
+}
+
+.fa-heart{
+    color: var(--alt);
+}
+
+.altOptions ul li {
+    list-style: none;
+    display: inline;
+    color: var(--alt);
+    padding: 0px 30px;
+    font-size: 1.3rem;
+}
+
+.altOptions a {
+    text-decoration: none;
+}
+
+.altOptions a:hover {
+    text-decoration: underline;
+    color: var(--alt);
+}
+
+.altOptions a:visited {
+    text-decoration: none;
 }
 
 caption {
     margin-bottom: 20px;
-    font-size: 1.7rem;
+    font-size: 2.4rem;
+    color: var(--alt);
 }
 
 th {
@@ -453,4 +512,12 @@ td {
     border-bottom: 2px solid #dddddd;
     font-size: 1.2rem;
     text-align: center;
+}
+
+#cake, #summer {
+    background-color: var(--primary);
+}
+
+#cakeTable, #summerTable {
+    color: white;
 }
