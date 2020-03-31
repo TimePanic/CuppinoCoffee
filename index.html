@@ -13,11 +13,12 @@
             <h1>Cuppino Coffee</h1>
             <h3 id="motto">Life begins with Good Coffee</h3>
         </div>
-    <nav>
+    <nav id="nav">
         <ul id="navigation">
             <a href="#home"><li>Home</li></a>
             <a href="#rewards"><li>Rewards</li></a>
             <a href="menu.html"><li>Menu</li></a>
+            <a href="#map"><li>Find Us</li></a>
             <a href="#contact"><li>Contact</li></a>
         </ul>
     </nav>
@@ -26,7 +27,7 @@
             <ul id="mobileNavigation">
                 <a href="#top"><li>Home</li></a>
                 <a href="menu.html" id="mobileMenu"><li>Menu</li></a>
-                <a href="#contact"><li>Contact</li></a>
+                <a href="#map"><li>Contact</li></a>
             </ul>
         </nav>
     </section>
@@ -82,6 +83,15 @@
                 <p>Offer ends 31st May at 7pm</p>
             </div>
         </section>
+        <section id="map">
+            <div class="findUs">
+                <h1>Find us here:</h1>
+                <div class="map">
+                    <iframe id="webMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5335.226396936277!2d-0.186113298327132!3d51.50236767401193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760dcae7950fef%3A0x89e65c2abc2c3f87!2sKensington%20Palace!5e0!3m2!1sen!2suk!4v1585674800361!5m2!1sen!2suk" width="800" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    <iframe id="mobMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5335.226396936277!2d-0.186113298327132!3d51.50236767401193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760dcae7950fef%3A0x89e65c2abc2c3f87!2sKensington%20Palace!5e0!3m2!1sen!2suk!4v1585674800361!5m2!1sen!2suk" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </section>
         <section id="contact">
             <div class="contact">
                 <h1>Contact Form</h1>
@@ -103,11 +113,16 @@
         </section>
     <footer>
         <ul>
-            <li><i class="fas fa-map-marker-alt"></i> 123 Fake High Street, SB13 2LU</li>
-            <li><i class="fas fa-at"></i> enquire@cuppinocafe.com</li>
-            <li><i class="fab fa-whatsapp"></i> 01123456789</li>
-            <li><i class="fas fa-phone-alt"></i> 02087654321</li>
-        </ul>
+            <span id="footer1">
+                <li><i class="fas fa-map-marker-alt"></i> 123 Fake High Street, SB13 2LU</li>
+                <li><i class="fas fa-at"></i> enquire@cuppinocafe.com</li>
+            </span>
+            <span id="footer2">
+                <li><i class="fab fa-whatsapp"></i> 01123456789</li>
+                <li><i class="fas fa-phone-alt"></i> 02087654321</li>
+            </span>
+        
+            </ul>
     </footer>
 </div>
 <script src="motto.js"></script>
