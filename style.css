@@ -233,6 +233,12 @@ nav {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+hr {
+    border: 1px solid lightgrey;
+    border-radius: 45%;
+    display: none;
+}
+
 .rewardsInfo {
     padding: 2%;
     border-radius: 10px;
@@ -335,9 +341,7 @@ footer i {
     padding-right: 10px;
 }
 
-/* ################################################ */
-
-/* CONTACT PAGE */
+/* ALT NAV */
 
 #altnav {
     text-align: left;
@@ -378,9 +382,10 @@ footer i {
     color: white;
 }
 
+/* CONTACT */
 
 .contact {
-    background-image: url(/img/wood2bg.jpg);
+    background-image: url(/img/contactBg.png);
     background-size: cover;
     color: var(--primary);
     font-size: 1.3rem;
@@ -492,9 +497,19 @@ form textarea:focus {
 }
 
 #coffeeTable, #cakeTable, #coldTable, #summerTable {
-    width: 50%;
-    margin-left: 25%;
+    width: 80%;
+    margin-left: 10%;
     color: black;
+}
+
+#coffeeTableMob {
+    display: none;
+}
+
+.mobInfo{
+    text-align: center;
+    padding-bottom: 20px;
+    display: none;
 }
 
 #coffee, #cake, #cold, #summer {
@@ -650,14 +665,121 @@ td {
         width: auto;
     }
 
-    .rewardsPoints {
+    .rewardsInfo :nth-child(6) {
         margin-top: 40px;
+    }
+
+    .rewardsPoints {
         height: auto;
+    }
+
+    hr {
+        display: block;
+        margin: 40px 0px;
+    
+        
+    }
+
+    .steps {
+        padding: 0px;
+        margin-top: 20px;
     }
 
     /* Offers */
 
     #offers {
         display: none;
+    }
+
+    /* Contact Form */
+
+    .contact {
+        padding-top: 20px;
+    }
+
+    .contact p {
+        padding: 20px;
+    }
+
+    .contact form {
+        width: 90%;
+        margin: 5%;
+    }
+
+    .contact label {
+        margin-left: 5%;
+    }
+
+    .contact input, .contact textarea {
+        width: 90%;
+        font-size: 1.1rem;
+    }
+
+    .contact button {
+        margin-left: 5%;
+        width: 90%;
+    }
+
+    footer {
+        margin-bottom: 100px;
+        font-size: 1.1rem;
+    }
+
+    footer li {
+        display: block;
+        margin: 10px 0px;
+    }
+
+    footer .fa-at {
+        display: none;
+    }
+
+    footer :nth-child(2) {
+        margin: 20px 0px;
+    }
+
+    /* Spacing */
+    .newsletter, .rewards, .contact {
+        margin-bottom: 10%;
+    }
+
+    /* ############################# */
+    /* Menu Page */
+
+    /* Alt Nav */ 
+
+    #altnav {
+        width: auto;
+    }
+
+    #altnav a {
+        visibility: hidden;
+    }
+
+    /* Tables */
+
+    caption {
+        display: none;
+    }
+
+    #coffee, #cake, #cold, #summer {
+        padding: 60px 20px;
+    }
+
+    #cakeTable, #coldTable, #summerTable {
+        width: auto;
+        margin: 0px;
+    }
+
+    #coffeeTable {
+        display: none;
+    }
+
+    #coffeeTableMob {
+        display: block;
+    }
+
+    .mobInfo {
+        display: block;
     }
 }
