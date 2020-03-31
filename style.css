@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-    background-image: url(/img/bg.png);
+    background-image: url(/img/mobBg.png);
     background-repeat: repeat;
 }
 
@@ -101,6 +101,45 @@ nav {
     color: white;
 }
 
+/* MOBILE NAVIGATION */
+#mobNav {
+    text-align: center;
+    background-color: var(--primary);
+    padding-top: 30px;
+    padding-bottom: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+#mobileNavigation li {
+    display: inline;
+}
+
+#mobileNavigation a {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+#mobileNavigation a:link {
+    text-decoration: none;
+    color: white;
+}
+
+#mobileNavigation a:visited {
+    color: white;
+}
+
+#mobileMenu {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
 /* HOME BANNER */
 
 .banner {
@@ -128,7 +167,7 @@ nav {
     text-align: center;
 }
 
-#home #bannerTxtBold {
+#bannerTxtBold {
     color: white;
     font-size: 3.2rem;
 }
@@ -172,6 +211,7 @@ nav {
 .newsletter button {
     margin-left: 40px;
     padding: 5px;
+    border-radius: 10px;
 }
 
 /* REWARDS */
@@ -350,7 +390,6 @@ footer i {
     padding: 2%;
     padding-top: 100px;
     border-radius: 10px;
-    /* background-image: linear-gradient(to bottom right, white, #F1F1F1   ); */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -531,4 +570,94 @@ td {
 
 #cakeTable, #summerTable {
     color: white;
+}
+
+/* MEDIA QUERIES FOR MOBILE */
+
+@media screen and (max-width: 768px) {
+
+    /* Header */
+    #motto {
+        font-size: 1.4rem;
+        padding: 10px
+    }
+
+    nav {
+        position: relative;
+    }
+
+    #navigation a {
+        display: none;
+    }
+
+    #mobNav {
+        display: block;
+    }
+
+    /* Banner */
+
+    .banner {
+        background-image: url(/img/mobBanner.png);
+        background-position: center;
+        height: auto;
+    }
+
+    .banner .overlay {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        padding-bottom: 30px;
+    }
+
+    #bannerTxt {
+        font-size: 1.2rem;
+    }
+
+    #bannerTxtBold {
+        font-size: 1.8rem;
+    }
+
+    /* Newsletter */
+
+    .newsletter label {
+        margin: 0px;
+    }
+
+    .newsletter input {
+        margin-bottom: 20px;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        font-size: 1.2rem;
+    }
+
+    .newsletter form #email {
+        width: 100%;
+    }
+
+    .newsletter button {
+        margin-left: 25%;
+        padding: 10px;
+        background-color: black;
+        color: white;
+    }
+
+    /* Rewards */
+
+    .rewards {
+        display: block;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        width: auto;
+    }
+
+    .rewardsPoints {
+        margin-top: 40px;
+        height: auto;
+    }
+
+    /* Offers */
+
+    #offers {
+        display: none;
+    }
 }

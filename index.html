@@ -9,7 +9,7 @@
 </head>
 <body onload="selectMotto()">
 <div class="container">
-        <div class="logo">
+        <div class="logo" id="top">
             <h1>Cuppino Coffee</h1>
             <h3 id="motto">Life begins with Good Coffee</h3>
         </div>
@@ -21,6 +21,15 @@
             <a href="#contact"><li>Contact</li></a>
         </ul>
     </nav>
+    <section id="mobNav">
+        <nav>
+            <ul id="mobileNavigation">
+                <a href="#top"><li>Home</li></a>
+                <a href="menu.html" id="mobileMenu"><li>Menu</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </section>
     <section id="home">
         <div class="banner">
             <div class="overlay">
@@ -34,12 +43,12 @@
             <div class="newsletter">
                 <h2>Sign up for our monthly newsletter</h2>
                 <form>
-                    <label for="firstName">First name:</label>
-                    <input type="text" placeholder="First Name" required>
-                    <label for="lastName">Last name:</label>
-                    <input type="text" placeholder="Last Name" required>
-                    <label for="email">Email:</label>
-                    <input id="email" type="email" placeholder="johndoe@someone.com" required>
+                    <label for="firstNameNews">First name:</label>
+                    <input id="firstNameNews" type="text" placeholder="First Name" required>
+                    <label for="lastNameNews">Last name:</label>
+                    <input id="lastNameNews" type="text" placeholder="Last Name" required>
+                    <label for="emailNews">Email:</label>
+                    <input id="emailNews" type="email" placeholder="johndoe@someone.com" required>
                     <button>Subscribe</button>
                 </form>
             </div>
@@ -50,11 +59,13 @@
                     <p>Earn Cuppino Points as a frequent buyer and get rewarded for your loyalty!</p>
                     <p>One point = <i class="fas fa-coffee"></i></p>
                     <p>Your points could ean you a free hot drink to a selection of free food.</p>
+                    <hr>
                     <p>Start earning points in 3 easy steps:</p>
                     <p class="steps"><i class="fas fa-angle-right"></i> Come in store and enquire about a card</p>
                     <p class="steps"><i class="fas fa-angle-right"></i> Register your card with an email address in store</p>
                     <p class="steps"><i class="fas fa-angle-right"></i> Start earning points!</p>
                 </div>
+                <hr>
                 <div class="rewardsPoints">
                     <p><i class="fas fa-coffee"></i> x 5 - Free hot drink</p>
                     <p><i class="fas fa-coffee"></i> x 10 - Free cake or sandwhich</p>
