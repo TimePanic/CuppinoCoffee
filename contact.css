@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(214, 160, 91);
+    color: white;
+    font-family: 'Comfortaa';
+}
+
+.mail {
+    text-align: center;
+    margin-top: 10%;
+}
+
+i {
+    padding-right: 10px;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}

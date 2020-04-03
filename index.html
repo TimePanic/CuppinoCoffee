@@ -23,8 +23,8 @@
         </ul>
     </nav>
     <section id="mobNav">
-        <nav>
-            <ul id="mobileNavigation">
+        <nav id="mobileNavigation">
+            <ul>
                 <a href="#top"><li>Home</li></a>
                 <a href="menu.html" id="mobileMenu"><li>Menu</li></a>
                 <a href="#map"><li>Contact</li></a>
@@ -41,18 +41,9 @@
             </div>
         </div>
     </section>
-            <div class="newsletter">
-                <h2>Sign up for our monthly newsletter</h2>
-                <form>
-                    <label for="firstNameNews">First name:</label>
-                    <input id="firstNameNews" type="text" placeholder="First Name" required>
-                    <label for="lastNameNews">Last name:</label>
-                    <input id="lastNameNews" type="text" placeholder="Last Name" required>
-                    <label for="emailNews">Email:</label>
-                    <input id="emailNews" type="email" placeholder="johndoe@someone.com" required>
-                    <button>Subscribe</button>
-                </form>
-            </div>
+    <div class="overflow">
+
+    </div>
         <section id="rewards">
             <div class="rewards">
                 <div class="rewardsInfo">
@@ -97,7 +88,7 @@
                 <p>- Alternatively you can contact us via the details found at the bottom
                     of this page -
                 </p>
-                <form action="">
+                <form action="contact.php" method="POST">
                     <label for="firstName">Name:</label>
                     <input type="text" id="firstName" placeholder="Your first name.." required>
                     <label for="lastName">Last Name:</label>
@@ -111,6 +102,18 @@
             </div>
         </section>
     <footer>
+        <div class="newsletter">
+            <h2>Sign up for our monthly newsletter</h2>
+            <form>
+                <label for="firstNameNews">First name:</label>
+                <input id="firstNameNews" type="text" placeholder="First Name" required>
+                <label for="lastNameNews">Last name:</label>
+                <input id="lastNameNews" type="text" placeholder="Last Name" required>
+                <label for="emailNews">Email:</label>
+                <input id="emailNews" type="email" placeholder="johndoe@someone.com" required>
+                <button>Subscribe</button>
+            </form>
+        </div>
         <ul>
             <span id="footer1">
                 <li><i class="fas fa-map-marker-alt"></i> 123 Fake High Street, SB13 2LU</li>

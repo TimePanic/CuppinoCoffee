@@ -67,13 +67,10 @@ body {
 }
 
 nav {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
     position: sticky;
     top: 0px;
     left: 0px;
-}
-
-#nav {
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 #navigation {
@@ -123,9 +120,14 @@ nav {
     box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.5);
 }
 
+#mobileNavigation {
+    box-shadow: none;
+}
+
 
 #mobileNavigation li {
     display: inline;
+    height: 40px;
 }
 
 #mobileNavigation a {
@@ -359,12 +361,11 @@ footer i {
 /* ALT NAV */
 
 #altnav {
-    text-align: left;
+    text-align: center;
     background-color: var(--primary);
     padding-top: 20px;
     padding-bottom: 20px;
     width: auto;
-    padding-left: 100px;
 }
 
 #altnav i {
@@ -481,6 +482,7 @@ footer i {
     padding-left: 10px;
     border: none;
     border-bottom: 2px solid var(--alt);
+    font-family: 'Comfortaa';
 }
 
 form input:focus {
@@ -568,7 +570,6 @@ form textarea:focus {
     padding: 50px;
     text-align: center;
 }
-
 .altOptions h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -702,6 +703,7 @@ td {
 
     .newsletter button {
         margin-left: 25%;
+        font-size: 1.1rem;
         width: 50%;
         padding: 10px;
         background-color: black;
@@ -820,10 +822,21 @@ td {
 
     #altnav {
         width: auto;
+        padding: 10px 0px;
+        text-align: left;
+
     }
 
     #altnav a {
-        visibility: hidden;
+        border: none;
+    }
+
+    .mobHidden {
+        display: none;
+    }
+
+    .borderright {
+        border-right: 1px solid white;
     }
 
     /* Alt Options */
