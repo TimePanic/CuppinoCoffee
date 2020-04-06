@@ -7,3 +7,4 @@ Features recently added:
 - Whole webpage is responsive to mobile and tablet
 - Contact page has been migrated onto the homepage making it easier to access and have more information in one place.
 - Embedded a Google Maps into the homepage. This is responsive to mobile as well and has a link to view the map on google.
+- A mobile only banner to make it easier for the user to use the navigation on mobile.
