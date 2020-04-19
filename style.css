@@ -176,7 +176,7 @@ nav {
 
 #bannerTxtBold {
     color: white;
-    font-size: 3.2rem;
+    font-size: 2.5rem;
 }
 
 /* HOME NEWSLETTER */
@@ -234,11 +234,9 @@ nav {
 .rewards {
     background-image: linear-gradient(to bottom right, white, #F1F1F1   );
     color: var(--primary);
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 90%;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
     padding-top: 100px;
     padding-bottom: 50px;
     margin-left: 5%;
@@ -251,12 +249,8 @@ nav {
 hr {
     border: 1px solid lightgrey;
     border-radius: 45%;
-    display: none;
-}
-
-.rewardsInfo {
-    padding: 2%;
-    border-radius: 10px;
+    width: 50%;
+    margin-left: 25%;
 }
 
 .rewards h1 {
@@ -267,34 +261,50 @@ hr {
 
 .rewards p {
     font-size: 1.3rem;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .rewards .fa-coffee {
     color: var(--brown);
 }
 
-.rewardsInfo :nth-child(3) {
+.rewardsInfo {
+    width: 50%;
     text-align: center;
+    padding-right: 20px;
+}
+
+#cup {
     margin-top: 20px;
     margin-bottom: 20px;
+    padding-left: 50px;
 }
 
 .rewards :nth-child(5) {
     margin-bottom: 20px;
     margin-top: 50px;
 }
-
-.rewardsPoints {
-    padding: 5%;
-    border-radius: 10px;
-    height: 100%;
-}
-
 .steps {
     padding-left: 40px;
 }
 
+.points {
+    padding-top: 50px;
+}
+
+.giftCards {
+    padding-left: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.giftCards :nth-child(4) {
+    line-height: 1.5rem;
+}
+
+#signOff {
+    padding-top: 40px;
+}
 /* OUR STORY */
 
 .ourStory {
@@ -329,8 +339,6 @@ hr {
 #sign {
     color: rgb(158, 96, 0);
 }
-
-/* GIFT CARDS */
 
 /* OFFERS */
 
@@ -765,27 +773,18 @@ td {
 
     /* Rewards */
 
+    .rewardsInfo, .giftCards {
+        width: 100%;
+    }
+
+    .giftCards {
+        padding-top: 50px;
+        padding-left: 0px;
+    }
+
     .rewards {
         display: block;
-        height: auto;
-        padding: 20px;
         text-align: center;
-        width: auto;
-    }
-
-    .rewardsInfo :nth-child(6) {
-        margin-top: 40px;
-    }
-
-    .rewardsPoints {
-        height: auto;
-    }
-
-    hr {
-        display: block;
-        margin: 40px 0px;
-    
-        
     }
 
     .steps {
@@ -961,8 +960,7 @@ td {
     }
 
     #bannerTxt, #bannerTxtBold {
-        padding-top: 20px;
-        padding-bottom: 10px;
+        display: none;
     }
 
     /* Newsletter */
@@ -982,8 +980,18 @@ td {
     }
 
     /* Rewards */
-    .rewardsInfo {
-        padding-left: 5%;
+    .rewardsInfo, .giftCards {
+        width: 100%;
+    }
+
+    .giftCards {
+        padding-top: 50px;
+        padding-left: 0px;
+    }
+
+    .rewards {
+        display: block;
+        text-align: center;
     }
 
     /* Our Story */
@@ -1000,6 +1008,10 @@ td {
     /* Map */
     .map {
         display: block;
+    }
+    
+    .address {
+        display: none;
     }
 
     /* Footer */
