@@ -253,6 +253,10 @@ hr {
     margin-left: 25%;
 }
 
+#hr {
+    margin-top: 60px;
+}
+
 .rewards h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -952,11 +956,11 @@ td {
     }
 
     #bannerTxt {
-        font-size: 1.3rem;
+        font-size: 1.8rem;
     }
 
     #bannerTxtBold {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
     #bannerTxt, #bannerTxtBold {
@@ -1029,5 +1033,17 @@ td {
     .altOptions ul li {
         padding: 0px 10px;
         font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-height: 720px)
+{
+    #bannerTxt, #bannerTxtBold {
+        display: none
+    }
+
+    .banner .overlay {
+        width: 100%;
+        padding-bottom: 20px;
     }
 }
